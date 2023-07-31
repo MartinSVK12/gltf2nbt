@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'sunsetsatellite'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'de.javagl:jgltf-model:2.0.3'
+    implementation "dev.dewy:nbt:1.5.1"
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'sunsetsatellite.gltf2nbt.Main'
+        )
+    }
+}
